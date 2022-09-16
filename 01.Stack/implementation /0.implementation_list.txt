@@ -5,3 +5,111 @@
     Unfortunately, the list has a few shortcomings. The biggest issue is that it can run into speed issues as it grows.
     The items in the list are stored next to each other in memory, if the stack grows bigger than the block of memory that currently holds it,
     then Python needs to do some memory allocations. This can lead to some append() calls taking much longer than other ones.
+
+# Python Lists are just like dynamically sized arrays, declared in other languages (vector in C++ and ArrayList in Java).
+ In simple language, a list is a collection of things, enclosed in [ ] and separated by commas.
+
+# Var = ["Geeks", "for", "Geeks"]
+print(Var)
+
+# append() method only works for the addition of elements at the end of the List,
+ for the addition of elements at the desired position, insert() method is used.
+  Unlike append() which takes only one argument, the insert() method requires two arguments(position, value).
+
+# append() and extend() methods can only add elements at the end.
+
+# Other than append() and insert() methods,
+ there’s one more method for the Addition of elements, extend(),
+  this method is used to add multiple elements at the same time at the end of the list.
+
+
+# Elements can be removed from the List by using the built-in remove() function but an Error arises if the element doesn’t exist in the list.
+ Remove() method only removes one element at a time, to remove a range of elements, the iterator is used. The remove() method removes the specified item.
+ Remove method in List will only remove the first occurrence of the searched element.
+
+# pop() function can also be used to remove and return an element from the list,
+ but by default it removes only the last element of the list,
+  to remove an element from a specific position of the List, the index of the element is passed as an argument to the pop() method.
+
+
+# A list can be reversed by using the reverse() method in Python.
+
+# We can get substrings and sublists using a slice. In Python List,
+ there are multiple ways to print the whole list with all the elements,
+  but to print a specific range of elements from the list, we use the Slice operation.
+    Slice operation is performed on Lists with the use of a colon(:). [: Index]
+    To print the whole list in reverse order, use
+        [::-1]
+
+# Python List comprehensions are used for creating new lists from other iterables like tuples,
+    strings, arrays, lists, etc.
+    A list comprehension consists of brackets containing the expression,
+    which is executed for each element along with the for loop to iterate over each element.
+
+#
+# Complexities for Creating Lists
+Time Complexity: O(1)
+Space Complexity: O(n)
+
+
+# Complexities for Accessing elements in a Lists:
+Time Complexity: O(1)
+Space Complexity: O(1)
+
+# Complexities for Adding elements in a Lists(append() method):
+Time Complexity: O(1)
+Space Complexity: O(1)
+
+# Complexities for Adding elements in a Lists(insert() method):
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+# Complexities for Adding elements in a Lists(extend() method):
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+
+# Complexities for Deleting elements in a Lists(remove() method):
+Time Complexity: O(n)
+Space Complexity: O(1
+
+
+# Complexities for Deleting elements in a Lists(pop() method):
+Time Complexity: O(1)/O(n) (O(1) for removing the last element, O(n) for removing the first and middle elements)
+Space Complexity: O(1)
+
+
+
+
+
+#  List Methods
+Function	Description
+Append()	Add an element to the end of the list
+Extend()	Add all elements of a list to another list
+Insert()	Insert an item at the defined index
+Remove()	Removes an item from the list
+Clear()	Removes all items from the list
+Index()	Returns the index of the first matched item
+Count()	Returns the count of the number of items passed as an argument
+Sort()	Sort items in a list in ascending order
+Reverse()	Reverse the order of items in the list
+copy()	Returns a copy of the list
+
+
+# Built-in functions with List
+Function	Description
+reduce()	apply a particular function passed in its argument to all of the list elements stores the intermediate result
+            and only returns the final summation value
+sum()	Sums up the numbers in the list
+ord()	Returns an integer representing the Unicode code point of the given Unicode character
+cmp()	This function returns 1 if the first list is “greater” than the second list
+max()	return maximum element of a given list
+min()	return minimum element of a given list
+all()	Returns true if all element is true or if the list is empty
+any()	return true if any element of the list is true. if the list is empty, return false
+len()	Returns length of the list or size of the list
+enumerate()	Returns enumerate object of the list , enumerate(iterable, start=0) ,
+            # changing index and printing separately
+            for count, ele in enumerate(l1, 100):
+                print (count, ele)
+

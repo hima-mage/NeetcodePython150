@@ -1,7 +1,7 @@
 # create empty list
 stack = []
-
-# append function to push element into the stack  O(1)
+# linear time -> The items in the list are stored next to each other in memory
+# append function to push element into the stack  O(n) -> linear time
 stack.append('a')
 stack.append('b')
 stack.append('c')
@@ -9,7 +9,7 @@ stack.append('c')
 print('Initial stack')
 print(stack)
 
-# pop() function is to pop last element in the stack using LIFO O(1)
+# pop() function is to pop last element in the stack using LIFO O(n) -> linear time
 print('\nElements popped from stack:')
 print(stack.pop())
 print(stack.pop())
