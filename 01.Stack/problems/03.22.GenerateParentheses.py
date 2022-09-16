@@ -8,6 +8,7 @@ class Solution:
         result = []
 
         def backtrack(openN, closedN):
+            # my base condition for recursion
             if openN == closedN == n:
                 result.append("".join(stack))
                 return
