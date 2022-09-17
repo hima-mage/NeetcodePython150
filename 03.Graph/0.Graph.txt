@@ -1,0 +1,66 @@
+# What is Graph in Data Structure and Algorithms?
+
+    A Graph is a non-linear data structure consisting of vertices and edges.
+     The vertices are sometimes also referred to as nodes and the edges are lines or arcs that connect any two nodes in the graph.
+     More formally a Graph is composed of a set of vertices( V ) and a set of edges( E ). The graph is denoted by G(E, V).
+
+# Components of a Graph
+        1.Vertices: Vertices are the fundamental units of the graph.
+                    Sometimes, vertices are also known as vertex or nodes. Every node/vertex can be labeled or unlabelled.
+        2.Edges: Edges are drawn or used to connect two nodes of the graph.
+                 It can be ordered pair of nodes in a directed graph. Edges can connect any two nodes in any possible way.
+                 There are no rules. Sometimes, edges are also known as arcs. Every edge can be labeled/unlabelled.
+
+# Tree v/s Graph
+    Trees are the restricted types of graphs,
+     just with some more rules.
+      Every tree will always be a graph but not all graphs will be trees. Linked List,
+      Trees, and Heaps all are special cases of graphs.
+
+# Representation of Graphs
+    There are two ways to store a graph:
+        1.Adjacency Matrix
+        2.Adjacency List
+
+# Types Of Graph
+    3. Undirected Graph
+         A graph in which edges do not have any direction.
+          That is the nodes are unordered pairs in the definition of every edge.
+
+    4. Directed Graph
+        A graph in which edge has direction.
+         That is the nodes are ordered pairs in the definition of every edge.
+
+# Adjacency Matrix
+In this method, the graph is stored in the form of the 2D matrix where rows and columns denote vertices.
+ Each entry in the matrix represents the weight of the edge between those vertices.
+
+# Adjacency List
+This graph is represented as a collection of linked lists. There is an array of pointer which points to the edges connected to that vertex.
+
+
+# Comparison between Adjacency Matrix and Adjacency List
+    When the graph contains a large number of edges then it is good to store
+    it as a matrix because only some entries in the matrix will be empty.
+    An algorithm such as Prim’s and Dijkstra adjacency matrix is used to have less complexity.
+
+#
+Action	            Adjacency Matrix	Adjacency List
+Adding Edge	            O(1)	            O(1)
+Removing and edge	    O(1)	            O(N)
+Initializing	        O(N*N)	            O(N)
+
+
+
+# Basic Operations on Graphs
+        Below are the basic operations on the graph:
+            Insertion of Nodes/Edges in the graph – Insert a node into the graph.
+            Deletion of Nodes/Edges in the graph – Delete a node from the graph.
+            Searching on Graphs – Search an entity in the graph.
+            Traversal of Graphs – Traversing all the nodes in the graph.
+
+
+# Usage of graphs
+Maps can be represented using graphs and then can be used by computers to provide various services like the shortest path between two cities.
+When various tasks depend on each other then this situation can be represented using a Directed Acyclic graph and we can find the order in which tasks can be performed using topological sort.
+State Transition Diagram represents what can be the legal moves from current states. In-game of tic tac toe this can be used.
