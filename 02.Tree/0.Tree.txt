@@ -37,7 +37,7 @@ A tree consists of a root, and zero or more subtrees T1, T2, … , Tk such that 
     6.Traversing in a tree is done by depth first search and breadth first search algorithm.
     7.It has no loop and no circuit
     8.It has no self-loop
-    9.Its hierarchical model.
+    9.Its hierarchical model.F
 
 
 # Syntax:
