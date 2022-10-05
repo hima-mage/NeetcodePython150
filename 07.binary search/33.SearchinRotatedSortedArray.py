@@ -3,6 +3,8 @@ https://leetcode.com/problems/search-in-rotated-sorted-array/
 
 binary search keep divide the array  by  2 -> which lead n/2**k -> k = log(n) number of operation
 """
+from typing import List
+
 
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
